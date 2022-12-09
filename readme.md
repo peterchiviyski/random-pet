@@ -1,30 +1,42 @@
-# Printout date and time during Terraform plan execution 
-This repo contains terraform configuration, which includes a resource "null_provider" that prints out the current date and time.
+# Terraform Provider random_string example
+
+This repo contains sample code of Terraform Provider [random_string](https://registry.terraform.io/providers/hashicorp/random/latest)
+
+It is configured to generate a random 10 character string.
 
 # Prerequisite
-You need to have [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed on you workstation. 
+You need to have [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli) >= 0.12 installed on you workstation. 
 
-# How to use the repo 
+# How to use the repo
+
 * Clone this repo locally to a folder of your choice
 ```
-git clone https://github.com/peterchiviyski/terraform_null_provider.git
+git clone https://github.com/peterchiviyski/random-string.git
 ```
-* Make sure you are in the main directory of the repo:
 
+* Make sure you are in the main directory of the repo:
 ```
-cd terraform_null_provider
+cd random-string
 ```
+
 * initialize Terraform  
 ```
 terraform init
 ```
+
 * Check the plan in order to see the changes which terraform is going to made.
 ```
 terraform plan
 ```
+
 * Apply the plan which terraform is going to execute based on our configuration (main.tf)
 ```
 terraform apply
 ```
-* Once you accept the changes by typing "yes", you will see the following output in the terminal:
-<img width="600" alt="Screen Shot 2022-05-27 at 11 16 24 AM" src="https://user-images.githubusercontent.com/52199951/170659963-6e7c1d4c-7fd5-456e-8a18-2964a08758eb.png">
+
+* Once you confirm the plan execution you can check your random_string with the following command:
+```
+terraform show
+```
+
+<img width="489" alt="Screen Shot 2022-05-31 at 9 44 46 AM" src="https://user-images.githubusercontent.com/52199951/171109429-7ac8c9b7-9662-49d0-bf54-eaa02ed7483c.png">
