@@ -1,4 +1,4 @@
-# Terraform Provider random_string example
+# Terraform Provider random_pet example
 
 This repo contains sample code of Terraform Provider [random_pet](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet)
 
